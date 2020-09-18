@@ -1,0 +1,66 @@
+{
+    "Currencies": {
+        "EUR" : {
+            "Model" : "HullWhite",
+            "HWMeanReversionCurve": {
+                "T": 50,
+                "step": 0.2,
+                "flat_rate": 0.039
+            },
+            "ProjectionSpread.3M": {
+                "T": 50,
+                "step": 0.2,
+                "flat_rate": 0.0148
+            },
+            "ProjectionSpread.6M": {
+                "T": 50,
+                "step": 0.2,
+                "flat_rate": 0.0248
+            },
+            "ProjectionSpread.12M": {
+                "T": 50,
+                "step": 0.2,
+                "flat_rate": 0.028
+            },
+            "alpha": 0.04,
+            "r0": 0.08,
+            "sigma": 0.001                
+        }
+    },
+    "CompanySurvivalCurve": {
+        "T": 14000,
+        "step": 100,
+        "flat_rate": 0.01
+    },
+    "CounterPartySurvivalCurve": {
+        "T": 14000,
+        "step": 100,
+        "flat_rate": 0.011
+    },
+    "ModelAndPricingTimes": {
+        "T": 14300,
+        "step": 50,
+        "PricingFreq": 3
+    },
+    "Portfolio": {
+        "NumRandomTrades": 5,
+        "NumPeriods": 5
+    },
+    "csa": {
+        "mta_h": 0.1,
+        "mta_l": 0.1,
+        "th": 0.9,
+        "tl": -0.9,
+        "c_t": 0
+            
+    },
+    "t0": 0,
+    "MCPaths": 16,
+    "UseMCPathBoundForPrimal" : true,
+    "MCPathsBoundForPrimal" : 16,
+    "Forward Only" : false,
+    "Primal Is Requred" : true,
+    "Adept" : true,
+    "Primal and Bumps Are Required" : true,
+    "Selective bumps" : true
+}
